@@ -22,21 +22,20 @@ public class PlayerMovement2D : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
-
-        // Mencegah player jatuh/miring dalam 2D
         rb.freezeRotation = true;
     }
 
     private void Update()
     {
-        if (!canMove)
+        if (!canMove || PlayerInputHandler.Instance == null)
         {
             horizontalInput = 0f;
             UpdateAnimator();
             return;
         }
 
-        horizontalInput = Input.GetAxisRaw("Horizontal");
+        // Membaca input pergerakan horizontal dari Input Handler
+        horizontalInput = PlayerInputHandler.Instance.MoveInput;
 
         HandleFacing();
         UpdateAnimator();

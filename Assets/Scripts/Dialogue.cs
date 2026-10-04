@@ -1,106 +1,116 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+public class Dialogue : MonoBehaviour, EffectScripts
 {
-    [Header("UI Reference")]
-    [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text nameText;
-    [SerializeField] private TMP_Text dialogueText;
+    public DialogueSystem dialogueData;
 
-    [Header("Dialogue Settings")]
-    [SerializeField] private string speakerName;
-    [TextArea(3, 5)]
-    [SerializeField] private List<string> sentences = new List<string>();
-    [SerializeField] private float typingSpeed = 0.03f;
+    // Panel + text tiap speaker. Index-nya HARUS cocok dengan
+    // DialogueLine.speakerIndex di DialogueSystem.
+    // Contoh: speakerPanels[0] = panel Player, speakerPanels[1] = panel NPC.
+    public GameObject[] speakerPanels;
+    public TMP_Text[] speakerTexts;
 
-    private int currentSentenceIndex = 0;
-    private bool isTyping = false;
-    private Coroutine typingCoroutine;
-    private PlayerMovement2D playerMovement;
+    public int priority = 0;
+    public int Priority => priority;
 
-    public bool IsDialogueActive { get; private set; }
+    private int dialogueIndex;
+    private bool isTyping;
+    private bool isDialogueActive;
 
-    private void Start()
+    public IEnumerator playEffects()
     {
-        if (dialoguePanel != null)
-            dialoguePanel.SetActive(false);
-    }
-
-    public void StartDialogue()
-    {
-        if (sentences.Count == 0) return;
-
-        IsDialogueActive = true;
-        currentSentenceIndex = 0;
-
-        // Kunci Pergerakan Player
-        playerMovement = FindObjectOfType<PlayerMovement2D>();
-        if (playerMovement != null)
+        if (isDialogueActive)
         {
-            playerMovement.CanMove = false;
+            Debug.Log("NEXT LINE");
+            nextLine();
+        }
+        else if (speakerPanels != null && speakerPanels.Length > 0 && !isDialogueActive)
+        {
+            Debug.Log("START DIALOGUE");
+            startDialogue();
         }
 
-        if (dialoguePanel != null)
-            dialoguePanel.SetActive(true);
-
-        if (nameText != null)
-            nameText.text = speakerName;
-
-        typingCoroutine = StartCoroutine(TypeSentence(sentences[currentSentenceIndex]));
+        while (isDialogueActive)
+            yield return null;
     }
 
-    public void OnInteractPressed()
+    void startDialogue()
     {
-        // Jika teks sedang diketik, langsung tampilkan seluruh kalimat (Skip Effect)
+        isDialogueActive = true;
+        dialogueIndex = 0;
+
+        StartCoroutine(typeline());
+    }
+
+    void nextLine()
+    {
         if (isTyping)
         {
-            StopCoroutine(typingCoroutine);
-            dialogueText.text = sentences[currentSentenceIndex];
+            StopAllCoroutines();
+            DialogueLine current = dialogueData.lines[dialogueIndex];
+            speakerTexts[current.speakerIndex].SetText(current.text);
             isTyping = false;
-            return;
         }
-
-        // Lanjut ke kalimat berikutnya
-        currentSentenceIndex++;
-
-        if (currentSentenceIndex < sentences.Count)
+        else if (dialogueIndex + 1 < dialogueData.lines.Length)
         {
-            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentSentenceIndex]));
+            dialogueIndex++;
+            StartCoroutine(typeline());
         }
         else
         {
-            EndDialogue();
+            endDialogue();
         }
     }
 
-    private IEnumerator TypeSentence(string sentence)
+    void endDialogue()
+    {
+        StopAllCoroutines();
+        isDialogueActive = false;
+
+        // Matiin semua panel speaker pas dialog selesai
+        foreach (var panel in speakerPanels)
+        {
+            if (panel != null) panel.SetActive(false);
+        }
+    }
+
+    // Nyalain panel milik speaker yang lagi ngomong, matiin sisanya.
+    // Ini bagian yang bikin efek "gantian" antara Player/NPC/dst.
+    void ShowSpeaker(int speakerIndex)
+    {
+        for (int i = 0; i < speakerPanels.Length; i++)
+        {
+            if (speakerPanels[i] == null) continue;
+            speakerPanels[i].SetActive(i == speakerIndex);
+        }
+    }
+
+    IEnumerator typeline()
     {
         isTyping = true;
-        dialogueText.text = "";
 
-        foreach (char letter in sentence.ToCharArray())
+        DialogueLine current = dialogueData.lines[dialogueIndex];
+
+        // Switch panel ke speaker baris ini SEBELUM mulai ngetik.
+        ShowSpeaker(current.speakerIndex);
+
+        TMP_Text targetText = speakerTexts[current.speakerIndex];
+        targetText.SetText("");
+
+        foreach (char letter in current.text)
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            targetText.text += letter;
+            yield return new WaitForSeconds(dialogueData.typingSpeed);
         }
 
         isTyping = false;
-    }
 
-    private void EndDialogue()
-    {
-        IsDialogueActive = false;
-
-        if (dialoguePanel != null)
-            dialoguePanel.SetActive(false);
-
-        // Buka Kembali Pergerakan Player
-        if (playerMovement != null)
+        if (current.autoProgress)
         {
-            playerMovement.CanMove = true;
+            yield return new WaitForSeconds(dialogueData.autoProgressDelay);
+            nextLine();
         }
     }
 }
