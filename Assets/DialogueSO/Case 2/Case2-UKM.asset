@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005cecb7c2f03494c893a83f0bd5bc33, type: 3}
+  m_Name: Case2-UKM
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
+  lines:
+  - text: 'Nah, akhirnya datang juga. '
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Nah, akhirnya datang juga. Aku mau ngasih tau sesuatu ke kalian.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Ada apa, Tam? Katanya ada pengumuman penting.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kamu belum dengar kabarnya?
+    speakerIndex: 3
+    autoProgress: 0
+  - text: Kabarnya apa?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: UKM Investigasi kemungkinan besar akan ditutup.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: ..........
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Hah? Ditutup? Maksudnya gimana?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Pihak kampus sedang mengevaluasi kegiatan UKM.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Anggota kita makin sedikit, kegiatan dianggap kurang aktif, dan beberapa
+      laporan penyelidikan kita mulai dipermasalahkan.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Tapi kita masih punya kasus yang belum selesai!
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku tahu.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: 'Masalahnya, pihak kampus merasa kegiatan kita sudah melewati batas. '
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Mereka menganggap beberapa penyelidikan kita mengganggu urusan internal
+      kampus.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Surat ini juga menyebutkan bahwa kita harus menyerahkan laporan kegiatan
+      dan seluruh arsip UKM untuk diperiksa.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Seluruh arsip? Termasuk catatan kasus yang belum selesai?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Iya. Kita diberi waktu untuk menyelesaikan administrasi sebelum keputusan
+      penutupan ditetapkan.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Ini aneh banget. Kenapa baru sekarang?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku juga belum tahu. Tapi untuk saat ini...
+    speakerIndex: 2
+    autoProgress: 0
+  - text: 'kita harus mengikuti prosedur sambil mencari tahu apa yang sebenarnya
+      terjadi.
+
+'
+    speakerIndex: 2
+    autoProgress: 0
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

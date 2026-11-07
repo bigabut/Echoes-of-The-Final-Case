@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005cecb7c2f03494c893a83f0bd5bc33, type: 3}
+  m_Name: Case2-Pengumuman
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
+  lines:
+  - text: '"Pemberitahuan Evaluasi Organisasi Mahasiswa."'
+    speakerIndex: 0
+    autoProgress: 0
+  - text: UKM Investigasi diwajibkan menyerahkan arsip kegiatan, laporan kasus, serta
+      dokumen administrasi untuk keperluan evaluasi.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Keputusan mengenai kelanjutan kegiatan akan ditetapkan setelah proses pemeriksaan
+      selesai.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Penutupan UKM... penyerahan arsip... Kenapa rasanya semua ini terjadi begitu
+      tiba-tiba?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: ' Ngomong-ngomong, Arwan, kamu tahu Reza ada di mana?'
+    speakerIndex: 3
+    autoProgress: 0
+  - text: Justru aku sedang mencarinya. Katanya dia sudah beberapa hari nggak masuk
+      kelas.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Reza? Aku terakhir melihatnya beberapa hari lalu. Dia sempat bertanya tentang
+      arsip kasus lama.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Arsip kasus lama?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: ' Iya. Dia bertanya apakah kita masih menyimpan laporan-laporan yang berkaitan
+      dengan pelanggaran akademik.'
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Sekarang setelah kamu bilang begitu, aku ingat sesuatu.
+    speakerIndex: 3
+    autoProgress: 0
+  - text: 'Beberapa hari lalu, Reza terlihat gelisah waktu membaca pengumuman tentang
+      nilai ujian.
+
+'
+    speakerIndex: 3
+    autoProgress: 0
+  - text: ' Berarti catatan yang kutemukan di mading memang ada hubungannya dengan
+      ujian itu.'
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Catatan apa?
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Dia meninggalkan pesan yang menyuruhku mencari tahu apa yang sebenarnya
+      terjadi pada ujian tersebut.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kalau begitu, jangan buru-buru mengambil kesimpulan.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: 'Cari tahu dulu apa yang ditemukan Reza.
+
+'
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku akan mulai dari kantin.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: ' Elena bilang biasanya dia ke sana sebelum kelas dimulai.'
+    speakerIndex: 0
+    autoProgress: 0
+  - text: .......
+    speakerIndex: 2
+    autoProgress: 0
+  - text: .......
+    speakerIndex: 3
+    autoProgress: 0
+  - text: 'Baik. Tapi hati-hati. Kalau memang ada sesuatu yang salah, '
+    speakerIndex: 2
+    autoProgress: 0
+  - text: ' jangan menyelidikinya sendirian tanpa memberi tahu kami.'
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Tenang saja. Aku cuma mau memastikan dia baik-baik saja.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Arwan, kalau kamu menemukan Reza, kabari kami. Jangan sampai kita kehilangan
+      anggota lain tanpa tahu apa yang terjadi.
+    speakerIndex: 3
+    autoProgress: 0
+  - text: Iya, iya. Aku bakal cari sampai ketemu.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kamu memang nggak pernah bisa membiarkan orang pergi begitu saja, ya?
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Memangnya salah?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Nggak. Aku cuma berpikir... terkadang ada orang yang memilih pergi karena
+      merasa itu yang terbaik.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kalau dia punya masalah, seharusnya dia cerita. Kita bisa cari jalan keluar
+      bersama.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kalau dia nggak mau cerita?
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Setidaknya aku mau dia tahu kalau dia nggak harus menghadapi semuanya sendirian.
+      Gaakan ada yang bisa ngelakuin semua ini sendirian.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: .............
+    speakerIndex: 1
+    autoProgress: 0
+  - text: ...Kalau aja aku berpikir seperti kamu dulu.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Hm? Kamu bilang sesuatu?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Nggak. Ayo, cari Reza.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: (tersenyum tipis)
+    speakerIndex: 1
+    autoProgress: 0
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005cecb7c2f03494c893a83f0bd5bc33, type: 3}
+  m_Name: Case3-Kartu
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
+  lines:
+  - text: Kunci dan kartu mahasiswa?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kartu ini milik seseorang yang mungkin berkaitan dengan kasus Reza. Aku
+      harus memeriksanya.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: ' Kita bisa mencari pemiliknya di ruang kelas. '
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Oke. Aku akan memeriksanya.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku tunggu di sini, ya.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kenapa nggak ikut?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku ingin membaca berita lainnya. Siapa tahu ada petunjuk yang terlewat.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Jangan sampai semuanya terulang lagi...
+    speakerIndex: 1
+    autoProgress: 0
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

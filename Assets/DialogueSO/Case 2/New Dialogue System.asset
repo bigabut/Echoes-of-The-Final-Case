@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005cecb7c2f03494c893a83f0bd5bc33, type: 3}
+  m_Name: New Dialogue System
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
+  lines:
+  - text: Reza?!
+    speakerIndex: 0
+    autoProgress: 0
+  - text: ' Arwan?! Kamu ngapain di sini?'
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Seharusnya aku yang bertanya! Kamu menghilang, nggak masuk kelas,
+    speakerIndex: 0
+    autoProgress: 0
+  - text: nggak menjawab telepon, dan meninggalkan catatan yang aneh di mading.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Maaf. Aku cuma... nggak tahu siapa yang bisa kupercaya.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Apa yang terjadi?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku menemukan bukti bahwa kunci jawaban ujian sudah beredar sebelum ujian
+      dilaksanakan.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kamu yakin?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku menemukan salinannya sendiri
+    speakerIndex: 1
+    autoProgress: 0
+  - text: ' Dan ada nama-nama mahasiswa yang terlibat dalam distribusinya.
+
+'
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kalau begitu, kenapa kamu tidak melapor?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Karena aku belum tahu siapa yang berada di balik semuanya.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kalau mereka tahu aku sudah menemukan bukti ini,
+    speakerIndex: 1
+    autoProgress: 0
+  - text: mereka mungkin akan menghilangkannya.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Jadi, kamu sengaja menghilang supaya bisa menyelidiki ini sendirian?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku pikir itu lebih aman.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: 'Setidaknya beri tahu kami bahwa kamu baik-baik saja, '
+    speakerIndex: 0
+    autoProgress: 0
+  - text: 'kan ada yg lain buat bantu kamu nyelesain kasus ini. '
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kamu gak percaya sama kami?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: ..........
+    speakerIndex: 1
+    autoProgress: 0
+  - text: ' Kamu benar. Maaf, Arwan, harusnya aku ngasih tau kalian. '
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Aku percaya sama kalian.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: 'Kita akan menyelidikinya bersama '
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Tapi kita perlu bukti yang cukup sebelum bertindak.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Setuju. Untuk sekarang, rahasiakan dulu apa yang kamu lihat di sini
+    speakerIndex: 1
+    autoProgress: 0
+  - text: kecuali ke anggota UKM.
+    speakerIndex: 1
+    autoProgress: 0
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

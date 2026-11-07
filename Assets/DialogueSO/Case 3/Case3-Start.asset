@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005cecb7c2f03494c893a83f0bd5bc33, type: 3}
+  m_Name: Case3-Start
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
+  lines:
+  - text: El,  kamu sudah baca hot news hari ini?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: New apalagi nih?
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Berita tentang hasil ujian. Ada beberapa mahasiswa yang dapat nilai sempurna
+      tiap mata kuliah.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Halo Arwan.
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Halo Tasya.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Lagi liat berita di mading juga? Kamu udah liat info baru di mading?
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Soal nilai sempurna di ujian itu? Iya, aku barusan liat bareng Elena.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Elena?...
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Bukan cuma itu. Ada dosen yang mulai mempertanyakan pola jawaban di beberapa
+      lembar ujian.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Jadi, dugaan Reza mungkin benar.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Reza? Memangnya dia menemukan sesuatu?
+    speakerIndex: 2
+    autoProgress: 0
+  - text: Dia belum ngasih tau kamu atau Tama?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Belum
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Dasar tuh bocah
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Dia lagi menyelidiki dugaan kebocoran kunci jawaban.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Sepertinya kasusnya lebih serius dari yang kita kira
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kamu langsung saja tanyain aja ke Reza.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Berarti kita harus berhati-hati.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: .....
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Wan, aku tahu kamu ingin membantu Reza.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Tapi jangan sampai kamu terlalu jauh masuk ke masalah yang belum kita pahami.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kamu khawatir?
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Ya, tentu saja. Aku nggak mau sesuatu terjadi kepadamu.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Aku akan baik-baik saja.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Kamu selalu bilang begitu.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Pokoknya, jangan lupa makan. Detektif juga butuh energi.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Siap, Bu Ketua.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Ih apasih, Aku bukan ketua!
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Kamu bisa ngga berhenti bertengkar sebentar? Aku menemukan sesuatu di lantai.
+    speakerIndex: 2
+    autoProgress: 0
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
