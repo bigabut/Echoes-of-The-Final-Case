@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005cecb7c2f03494c893a83f0bd5bc33, type: 3}
+  m_Name: Case1-endFix
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
+  lines:
+  - text: Apaan sih kamu?
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Udah dibilangin mau aku elus. Suruh siapa imut banget.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: Iya-iya. Bisa aja terus tuh gombalnya.
+    speakerIndex: 1
+    autoProgress: 0
+  - text: "Meong\u2026"
+    speakerIndex: 2
+    autoProgress: 0
+  - text: ' Bangun juga kamu. Arwan foto bareng kucing yuk. Buat kenang-kenangan
+      di sini.
+
+'
+    speakerIndex: 1
+    autoProgress: 0
+  - text: Boleh. Sebentar, biar aku yang pegang kameranya.
+    speakerIndex: 0
+    autoProgress: 0
+  - text: 'Yey! Geser sini sedikit... Oke, siap ya! Satu... dua... tiga!
+
+'
+    speakerIndex: 1
+    autoProgress: 0
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
