@@ -36,15 +36,6 @@ MonoBehaviour:
       tentang siapa yang terakhir berada di sini.
     speakerIndex: 0
     autoProgress: 0
-  - text: 
-    speakerIndex: 0
-    autoProgress: 0
-  - text: 
-    speakerIndex: 0
-    autoProgress: 0
-  - text: 
-    speakerIndex: 0
-    autoProgress: 0
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}

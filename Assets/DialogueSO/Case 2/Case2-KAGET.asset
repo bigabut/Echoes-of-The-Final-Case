@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Case2-KAGET
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
   lines:
-  - text: 'Arwan: Siapa di sana?'
+  - text: 'Arwan: Siapa di sana?!'
     speakerIndex: 0
     autoProgress: 0
   autoProgressDelay: 1.5
